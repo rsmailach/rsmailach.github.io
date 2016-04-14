@@ -1,12 +1,11 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: red;
 }
 
 nav ul li {
     float: left;
-    border-right: 1px solid #ffffff;    
+    /*border-right: 1px solid #ffffff;    */
 }
 
 .btn {
@@ -64,11 +63,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.active {
-    background-color: bisque;
-    
-}
-
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -94,4 +88,5 @@ ul.posts li {
 }
 .socialMedia img {
     width: 50px;
+    height: 50px;
 }
