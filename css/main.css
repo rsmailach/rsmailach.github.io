@@ -89,9 +89,9 @@ ul.posts li {
     list-style: none;
 }
 
-ul.socialMedia {
+.socialMedia ul {
     list-style: none;
 }
-ul.socialMedia img {
+.socialMedia img {
     width: 50px;
 }
