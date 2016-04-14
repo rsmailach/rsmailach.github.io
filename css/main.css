@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: red;
 }
 
 nav ul li {
@@ -88,9 +89,9 @@ ul.posts li {
     list-style: none;
 }
 
-.socialMedia ul{
+ul.socialMedia {
     list-style: none;
 }
-.socialMedia img {
-    width: 10px;
+ul.socialMedia img {
+    width: 50px;
 }
