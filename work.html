@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Rachel Mailach</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-        <!-- include header and footer-->
-        <script src="/js/jquery-1.12.0.min.js"></script> 
-        <script> $(function(){ $("#header").load("includes/header.html"); }); </script>
-        <script> $(function(){ $("#footer").load("includes/footer.html"); }); </script>        
+		 <nav>
+        	<ul class="btn-group">
+            	<li><a class="btn" href="index.html" >Home</a></li>
+        	    <li><a class="btn" href="about.html">About</a></li>
+            	<li><a class="btn" href="sideProjects.html" >Projects</a></li>
+            	<li><a class="btn, active" href="work.html">Work</a></li>
+        	</ul>
+    		</nav>
 	</head>
 	<body>
-		<div id="header"></div>
 
         <div class="page">
+            <br>
             <h1>My Work</h1>
             <p>I'm best known as the one who brings cookies to work. Don't trust me. </p>
-            		    <h1>CV</h1>
+            <h1>CV</h1>
             <p>Here is a downloadable pdf... </p>
         
             <h2>TA</h2>
@@ -41,6 +46,18 @@
             -->
 
         </div>
-        <div id="footer"></div>
+        <!--------------------------------FOOTER-------------------------------->
+        <footer>
+    		<ul class="socialMedia">
+        		<li><a href="mailto:rachel.mailach@gmail.com"><img src="images/EmailIcon.png"></a></li>
+        		<li><a href="https://github.com/rsmailach"><img src="images/GithubIcon.png"></a></li>
+                <li><a href="https://linkedin.com/rachelmailach"><img src="images/LinkedInIcon.png"></a></li>
+                 <!--<li><a href=""><img src="images/EtsyIcon.png"></a></li>
+                 <li><a href=""><img src="images/EtsyIcon.png"></a></li>
+                 <li><a href=""><img src="images/InstagramIcon.png"></a></li>
+                <li><a href=""><img src="images/TumblrIcon.png"></a></li>-->
+            </ul>
+            <p style="font-size: 0.8em;">© Rachel Mailach. All rights reserved. 2016</p>
+		</footer>
 	</body>
 </html>
