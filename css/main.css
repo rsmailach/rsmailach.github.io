@@ -1,12 +1,16 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: #F5F5F5;
 }
 
 nav ul li {
     float: left;
     /*border-right: 1px solid #ffffff;    */
+    min-width: 95px;
+
 }
+
 
 .btn {
   background: #999999;
@@ -20,8 +24,9 @@ nav ul li {
   color: #ffffff;
   font-size: 15px;
   text-decoration: none;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 25px 10px 25px;
   display: block;
+
 }
 /* nav bar hover */
 .btn:hover{
@@ -33,9 +38,32 @@ nav ul li {
   font-family: Arial;
   color: #ffffff;
   font-size: 15px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 25px 10px 25px;
   text-decoration: none;
   display: block;
+}
+
+nav {
+    float: right;
+    max-width: 50%;
+}
+
+.name {
+    padding: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';  
+    width: 100%;
+    border-bottom: 1px solid #d5d5d5;
+}
+.pageTitle{
+    padding: 0;
+    font-size: 3em;
+    font-weight: bold;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif'; 
+    clear: both;
+    padding-top: 20px;
+    
 }
 
 nav ul, footer ul {
@@ -44,6 +72,7 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
@@ -63,30 +92,81 @@ a:hover {
     text-decoration: underline;
 }
 
+.page {
+    padding-bottom: 10px;
+}
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-p {
+
+h2 {
+    font-size: 2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+h3 {
     font-size: 1.5em;
-    line-height: 1.4em;
+}
+
+p, ul li {
+    font-size: 1.3em;
+    line-height: 1.2em;
     color: #333;
 }
 
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+ul.socialMedia li{
+    display: inline;
+    margin-right: 10px;
+    
 }
 
-ul.posts li {
-    list-style: none;
-}
-
-.socialMedia ul {
-    list-style: none;
-}
 .socialMedia img {
-    width: 50px;
-    height: 50px;
+    max-width: 40px;
+    max-height: 40px;
 }
+
+
+/*PROJECT GRID LAYOUT*/
+.grid-container{
+    width: 100%; 
+    max-width: 1200px;    
+    padding: 20px;
+}
+.row:before, .row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+.col{ 
+    max-width: 33.%; 
+    float: left; 
+    min-height: 10px; 
+    padding: 10px; 
+}
+.col:hover .gridImage {
+  opacity: 0.2;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+.gridImage, .gridMovie{ 
+    max-width: 290px;
+}
+.col {
+    position: relative; 
+}
+.col .hoverText {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    visibility:hidden;
+    z-index: 10;
+    max-width: 270px;
+}
+.col:hover .hoverText {
+    visibility: visible;
+}
+
+
+
+
