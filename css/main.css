@@ -62,7 +62,7 @@ nav ul li {
 nav {
     float: right;
     max-width: 50%;
-     margin-top: 20px;
+     margin-top: 40px;
 }
 
 nav ul, footer ul {
@@ -190,37 +190,45 @@ ul.socialMedia li{
   opacity: 0.1;
   filter: alpha(opacity=10); /* For IE8 and earlier */
 }
-.gridImage{ 
-  width: 290px;
-  height: 290px;
+.gridImage{
+  max-width: 290px;
+  max-height: 290px;
+  width: auto;
+  height: auto;
   position: relative;
-  top: 25%; 
-  background-color: black;
-    
-}
-.gridMovie {
-    width: 290px;
-    position: absolute;
-    width: 90%;
-    top: 25%;
-    padding: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  
 }
 .col {
+    width: 290px;
+    height: 290px;
     position: relative; 
+    margin: 5px;
 }
-.col .hoverText {
+.col .hoverText{
     position:absolute;
     top: 20px;
     left: 20px;
+    
+    
     visibility:hidden;
-    z-index: 10;
+    
     max-width: 270px;
-    font-size: 0.8em;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    color: white;
 }
 .col:hover .hoverText {
     visibility: visible;
+    
 }
-
+.hoverTitle {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif'; 
+    font-size: 1.5em;
+    color: white;
+    padding-bottom: 20px;
+}
 .hoverText #loopText {
     width: 270px;
     position:absolute;
@@ -233,4 +241,9 @@ ul.socialMedia li{
     position:absolute;
     left:0;
     top: 220px;
+    background-color: #999999;
+    padding: 5px;
+}
+.square {
+    background-color: black;
 }
