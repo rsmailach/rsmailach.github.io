@@ -1,11 +1,14 @@
 html {
     position: relative;
     min-height: 100%;
+    min-width: 100px;
 }
 body {
     margin: 60px auto;
     width: 70%;
     background-color: #F5F5F5;
+     min-width:900px;
+    max-width: 1100px;
 }
 
 .name {
@@ -232,20 +235,22 @@ ul.socialMedia li{
     background-color: black;
 }
 
-/*FOOTER & RESPONSIVE DESIGN*/
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
     padding: 10px 0px 0px 0px;
     width: 70%;
+    min-width: 900px;
 	position: fixed;
 	bottom: 0;
     clear:both;
     background-color: #F5F5F5;
 }
 
+/*RESPONSIVE DESIGN*/
 @media (max-height:800px){
-	footer { position: static; }
+	footer { position: static;  }
 	header { padding-top:40px; }
 }
 
