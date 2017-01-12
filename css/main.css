@@ -98,10 +98,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 20px 0px 0px 0px;
     padding: 0px;
+    color: #333;
 }
 
 h3 {
